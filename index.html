@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
+
+<head>
+  <title>Daniela Gallegos Dupuis</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Daniela Gallegos Dupuis">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/grid.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/interested.css">
+  <link rel="stylesheet" href="./styles/dream.css">
+  <link rel="stylesheet" href="./styles/Portfolio.css">
+  <!-- Interested -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Dreams -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<!-- HEAD ENDS -->
+
+<body>
+
+
+
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Loader  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="loader">
+    <!-- Loading square for squar.red network -->
+    <span class="loader"><span class="loader-inner"></span></span>
+    <script>  $("#loader").fadeOut(3333);</script>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Full screen Video  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Dreams_R_Possible">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <div id="Dream">
+            <h1 class="header">
+              <a href="#HOME_PAGE">Know That It Is Possible.</a>
+            </h1>
+            <div class="titles">
+              <div class="title title-1">
+                <h1>Whatever</h1>
+              </div>
+              <div class="title title-2">
+                <h1>Your</h1>
+              </div>
+              <div class="title title-3">
+                <h1>Dream is ...</h1>
+              </div>
+            </div>
+          </div>
+          <script>
+            TweenMax.staggerFrom(
+              ".titles > div",
+              2.0,
+              {
+                x: "-60",
+                ease: Power3.easeInOut,
+                opacity: "0",
+              },
+              2
+            );
+
+            TweenMax.staggerTo(
+              ".titles > div",
+              0.8,
+              {
+                x: "60",
+                ease: Power3.easeInOut,
+                delay: 1.2,
+                opacity: "0",
+              },
+              2
+            );
+            TweenMax.staggerFrom(
+              "li",
+              3,
+              {
+                x: "-1600",
+                delay: 4.2,
+                ease: Expo.easeInOut,
+              },
+              0.16
+            );
+
+            TweenMax.staggerTo(
+              "li",
+              2.6,
+              {
+                x: "1600",
+                delay: 6.8,
+                ease: Expo.easeInOut,
+              },
+              0.2
+            );
+
+            var textWrapper = document.querySelector(".header");
+            textWrapper.innerHTML = textWrapper.textContent.replace(
+              /\S/g,
+              "<span class='letter'>$&</span>"
+            );
+
+            anime.timeline().add({
+              targets: ".header .letter",
+              opacity: [0, 1],
+              translateY: [80, 0],
+              translateZ: 0,
+              easing: "easeOutExpo",
+              duration: 2000,
+              delay: (el, i) => 7400 + 40 * i,
+            });
+          </script>
+        </div>
+        <div class="scroll">
+          <a href="#Introduction">
+            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Atomic Dani: Name, introduction, Portfolio is about ------------------------------------------------------------------------>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Introduction">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <div class="profile">
+            <img src="./img/professional.png" alt="" class="center">
+          </div>
+          <div class="name">
+            <h1>Daniela Gallegos Dupuis</h1>
+          </div>
+
+          <p class="intro">
+            Hi, I am Dani, a Computer Science student at the University of Victoria.
+            Whether it is writing a simple python program to do my homework, collaborating
+            worldwide, or challenging myself with an open-ended school assignment, computer science
+            opened a whole world of possibilities since Hello World.
+          </p>
+          <div class="social">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="icon">
+                    <a href="./Daniela's Resume.pdf" target="_blank">
+                      <img src="img/new_Icons/resume.png" alt="resume"></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="icon">
+                    <a href="https://www.linkedin.com/in/danigallegdup/" target="_blank">
+                      <img src="img/new_Icons/linkedIn.png" alt="resume" style="padding-left: 1%;"></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="icon">
+                    <a href="mailto:danigallegdup@gmail.com" target="_blank">
+                      <img src="img/new_Icons/email.png" alt="resume"></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="icon">
+                    <a href="https://github.com/danigallegdup" target="_blank">
+                      <img src="img/new_Icons/GitHub.png" alt="resume"></a>
+                  </div>
+                </td>
+                <td>
+                  <div class="icon">
+                    <a href="https://www.instagram.com/_dani.gd/" target="_blank">
+                      <img src="img/new_Icons/insta.png" alt="resume"></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#Portfolio_Page">
+            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Portfolio  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Portfolio_Page">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <h1>Portfolio</h1>
+          <div class="grid-sqr3s">
+            <div class="square3_1">
+              <div class="item" id="wecs">
+                <div class="item_title">
+                  <div class="title">Firmware Engineering Co-op Schneider Electric </div>
+                  <div class="date"> May - Dec 2022</div>
+                  <div class="description">Victoria B.C.</div>
+                </div>
+                <div class="middle_table">
+                  <ul>
+                    <li> • Contributed to an Advanced Metering Team’s git repository by testing the verification and
+                      validation of ION900
+                      and PM800 Power Meter variants. Utilizing pytest, wrote unit automated tests verifying a two byte
+                      response
+                      service and password reset authentication session </li>
+                    <li> • Connected and installed power meters into the team’s test rack using various types of network
+                      protocols: ssh,
+                      ethernet, debug card, pyion to ensure they could be accessed and manipulated remotely.</li>
+                    <li> • Actively participated in firmware test planning within an agile continuous integration
+                      workflow by writing test
+                      cases, reports and performing sanity checks </li>
+                  </ul>
+                </div>
+                <a href="https://docs.google.com/document/d/1W2S7O-mESeGsCUqxGkNUpRpE84yyW1XRiHD9WFWl4yk/edit?usp=sharing"
+                  target="_blank" rel="schneider co-op experience">
+                  <div class="experience">
+                    <p> Read About Experience</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="square3_2">
+              <div class="item" id="sps">
+                <div class="item_title">
+                  <div class="title">Google Software Product Sprint Program (SPS)</div>
+                  <div class="date"> Summer 2022</div>
+                  <div class="description"> Virtual</div>
+                </div>
+                <div class="middle_table">
+                  <ul>
+                    <li> • Collaborated with a team of peers to build a web application platform for university students
+                      to find events and
+                      opportunities around the world. Designed and implemented the web application leveraging various
+                      Google Cloud
+                      Platform API’s, including App Engine and Datastore as a team with aid for a project advisor.</li>
+                    <li> • Created a dynamic, interactive Personal Portfolio, using Java servlets, JavaScript, and
+                      HTML/CSS that responded
+                      to real-time user generated data.</li>
+                  </ul>
+                </div>
+                <a href="https://docs.google.com/document/d/1YBJ-OCzg-9ltEDy0Dznhh_mXAciRcwEveiJ_DlvHoCM/edit?usp=sharing"
+                  target="_blank" rel="sps experience">
+                  <div class="experience">
+                    <p> Read About Experience</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="square3_3">
+              <div class="item" id="se">
+                <div class="item_title">
+                  <div class="title"> Women in Engineering and Computer Science Club (WECS) </div>
+                  <div class="date"> Jan 2021 - Present</div>
+                  <div class="description"> University of Victoria</div>
+                </div>
+                <div class="middle_table">
+                  <ul>
+                    <li>• Held review sessions for mandatory first year computer science courses, presenting to an
+                      auditorium of over one
+                      hundred students
+                    </li>
+                    <li>• Peer-tutored in C, Java and Python programming Languages and built a virtual community of 80+
+                      students</li>
+                  </ul>
+                </div>
+                <a href="https://docs.google.com/document/d/1VPPrmwgEtso0KpCF_cZcVYMJBUrNO7EqiivuNfffhI0/edit?usp=sharing"
+                  target="_blank" rel="wecs experience">
+                  <div class="experience">
+                    <p> Read About Experience</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#Project_Page">
+            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Projects  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Project_Page">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <h1>Projects</h1>
+          <div class="grid-sqr3s">
+            <section class="cards-wrapper">
+              <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="card" target="_blank" href="https://github.com/danigallegdup/MultipleChoice"
+                  style="background-image: url(./img/star.png);">
+                  <div>
+                    <h1>Muliple Choice</h1>
+                    <p>Through WECS I hold a lot of review sessions for mandatory computer science courses and I often
+                      brainstorm different
+                      ways to make our practice exams content effectively hit both the theory and practice of computer
+                      programming. Then I
+                      came up with the idea of a multiple choice test about Java written in Java and I had to create it.
+                      This project demonstrates
+                      an interactive practice test that demonstrated both the theory and practice of programming in
+                      Java.</p>
+                    <div class="date"> August 2022</div>
+                    <div class="tags">
+                      <div class="tag">API</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="card" target="_blank" href="https://github.com/danigallegdup/MentalMath"
+                  style="background-image: url(./img/star.png);">
+                  <div>
+                    <h1>Mental Math</h1>
+                    <p>Although there are a lot of cases about digital technology making people more impatient,
+                      dependent and lazy, I believe it can also be used to make people self-reliant, creative, and
+                      educated. Technology is a powerful tool, it is important to use it wisely. I created this program
+                      to help me get better at holding numbers in my head. Whether it is being able to calculate a rough
+                      estimation of my total before reaching the till at the supermarket, or trusting myself in adding
+                      single digit numbers without pulling out my calculator.</p>
+                    <div class="date">Oct 2022</div>
+                    <div class="tags">
+                      <div class="tag">CSC 115</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="card" target="_blank" href="https://github.com/danigallegdup/daisy"
+                  style="background-image: url(./img/star.png);">
+                  <div>
+                    <h1>Daisy: Safer Together</h1>
+                    <p>Safer Together is a project that provides anyone, especially women, with a buddy system for
+                      navigating rural or public areas that are typically unsafe or uncomfortable for them to be alone
+                      in. Need to walk by a dangerous street or alley late at night? Need a bus buddy that goes to your
+                      school? Don't have anyone to go see that awesome concert or club with? Just moved to a new city
+                      not knowing anyone?</p>
+                    <div class="date">Dec 2022</div>
+                    <div class="tags">
+                      <div class="tag">Python</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="card" target="_blank" href="https://devpost.com/software/hopping-through-history"
+                  style="background-image: url(./img/star.png);">
+                  <div>
+                    <h1>Hopping Through History</h1>
+                    <p>
+                      “Hopp-ing Through History” is a web browser game that raises awareness about women in technology
+                      and the struggles
+                      they have faced throughout history. We wanted to create an easy yet aesthetically pleasing game
+                      that would educate
+                      players about the impact of women in technology to reduce gender bias.
+                    </p>
+                    <div class="date">March 2021</div>
+                    <div class="tags">
+                      <div class="tag">JavaScript Web game </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#Dreams_R_Possible">
+            <img src="img/new_Icons/up.png" alt="move"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
