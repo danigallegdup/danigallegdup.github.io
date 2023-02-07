@@ -1,0 +1,67 @@
+
+#loader {
+    background-color: #000207;
+    text-align: center;
+    height: 110vh;
+    /* For 100% screen height */
+    width: 100vw;
+    /* For 100% screen width */
+    position: absolute;
+    top:0;
+    
+}
+
+#Dreams_R_Possible {
+    background-image: url("../img/star.png");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    height: 110vh;
+    /* For 100% screen height */
+    width: 100vw;
+    /* For 100% screen width */
+}
+
+#Dream h1.header {
+	font-family: "Bigilla" !important;
+	text-transform: uppercase;
+	font-weight: bolder;
+	width: 80%;
+
+}
+
+#Dream .titles {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+#Dream h1 {
+	font-weight: 280%;
+	font-size: 310%;
+	font-family: "Barracuda" !important;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#Dream ul.titles {
+	display: flex;
+}
+
+#Dream ul.blocks {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#Dream li.block {
+	height: 50vh;
+}
+
