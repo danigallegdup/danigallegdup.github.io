@@ -135,14 +135,21 @@
 
 /* bullet points */
 .middle_table{
-	padding-bottom: 5%;
+    padding-bottom: 5%;
 	padding-top: 5%;
 	border-bottom: 2px solid whitesmoke;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.middle_table ul ::-webkit-scrollbar {
+    display: none;
 }
 
 .middle_table ul {
     height: 37vh;
     overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
 .experience{
