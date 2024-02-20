@@ -6,11 +6,13 @@
     margin-bottom: 0%;
     padding: 0%;
     font-family: "Bigilla" !important;
+    
 }
 
 body{ background-image: linear-gradient(#09334e,#c3918d);}
 
-html {scroll-behavior: smooth;}
+html {scroll-behavior: smooth;
+    overflow: hidden; /* Hide scrollbars */}
 
 .content {
     padding-top: 3vw;
@@ -25,7 +27,7 @@ html {scroll-behavior: smooth;}
    
     height: 110vh;
     /* For 100% screen height */
-    width: 100vw;
+    width: 100%;
     /* For 100% screen width */
 }
 
@@ -34,7 +36,7 @@ html {scroll-behavior: smooth;}
     background-repeat: repeat;
     height: 110vh;
     /* For 100% screen height */
-    width: 100vw;
+    width: 100%;
     /* For 100% screen width */
 }
 
