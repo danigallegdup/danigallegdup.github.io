@@ -121,10 +121,29 @@
             });
           </script>
         </div>
-        <div class="scroll">
-          <a href="#Introduction">
-            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
+            <div class="nav-container">
+            <button id="nav-button">
+                <img src="./img/new_Icons/scroll2.png" alt="move">
+            </button>
         </div>
+
+        <script>
+            var stages = [ 'Introduction', 'Project_Page', 'Dreams_R_Possible'];
+            var currentStage = 0;
+
+            document.getElementById('nav-button').addEventListener('click', function () {
+                document.getElementById(stages[currentStage]).scrollIntoView({ behavior: 'smooth' });
+                currentStage = (currentStage + 1) % stages.length;
+            });
+
+            window.addEventListener('scroll', function () {
+                var totalHeight = document.body.scrollHeight - window.innerHeight;
+                var progress = (window.pageYOffset / totalHeight) * 100;
+                document.getElementById('progress-bar').style.width = progress + '%';
+            });
+        </script>
+
+        <!-- <div id="progress-bar"></div> -->
       </div>
     </div>
   </div>
@@ -184,11 +203,7 @@
               </tr>
             </tbody>
           </div>
-        </div>
-        <div class="scroll">
-          <a href="#Project_Page">
-            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
-        </div>
+        </div> 
       </div>
     </div>
   </div>
@@ -284,10 +299,6 @@
               </div>
             </section>
           </div>
-        </div>
-        <div class="scroll">
-          <a href="#Dreams_R_Possible">
-            <img src="img/new_Icons/up.png" alt="move"></a>
         </div>
       </div>
     </div>
