@@ -43,25 +43,7 @@ p {
     margin: auto;
 }
 
-footer {
-    background-color: #0d100eB1; /* Dark background color */
-    color: #b8a081; /* Light text color */
-    padding: 0.5rem 0; /* Padding for top and bottom */
-    text-align: center; /* Center the text */
-    position: fixed; /* Fix the footer at the bottom */
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
-}
 
-footer p {
-    margin: 0; /* Remove default margin */
-    font-size: 0.7rem; /* Adjust font size */
-}
-
-footer:hover {
-    background-color: #0d100e;
-}
 /* if it is a phone */
 
 

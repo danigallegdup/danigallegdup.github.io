@@ -4,6 +4,23 @@
 
 /* if it is a phone */
 @media (max-aspect-ratio: 1/1) {
+
+    footer {
+        background-color: #0d100eB1; /* Dark background color */
+        color: #b8a081; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 0.5rem; /* Adjust font size */
+    }
+    
       #home {
         position: relative; /* Ensure the pseudo-element is positioned relative to #home */
         background-color: #513819;
@@ -73,6 +90,27 @@
 
 /* if it is a comp  #513819;*/
 @media (min-aspect-ratio: 1/1) {
+
+    footer {
+        background-color: #0d100eB1; /* Dark background color */
+        color: #b8a081; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    footer:hover {
+        background-color: #0d100e;
+    }
+
     #home {
         display: flex;
         
@@ -148,13 +186,33 @@
 /* if it is a huge monitor */
 /* if it is a comp*/
 @media (min-width: 2500px) {
+    footer {
+        background-color: #0d100eB1; /* Dark background color */
+        color: #b8a081; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    footer:hover {
+        background-color: #0d100e;
+    }
+
     #home {
         background-color:#513819;
         margin: 0;
         height: 100vh; /* Full screen height */
         display: grid;
         grid-template-columns: 10% 40% 40% 10%; /* Define the width proportions */
-        grid-template-rows: 1fr; /* Single row, takes up full height */
+        grid-template-rows: 1.2fr; /* Single row, takes up full height */
     }
     
   
