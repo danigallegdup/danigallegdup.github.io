@@ -1,0 +1,68 @@
+* {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Times New Roman'; /* Change font */
+}
+
+.favicon img {
+  border-radius: 50%;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+}
+
+html {scroll-behavior: smooth;
+    overflow: auto; /* Hide scrollbars */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+/* General text styling */
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+footer {
+    background-color: #0d100eB1; /* Dark background color */
+    color: #b8a081; /* Light text color */
+    padding: 0.5rem 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Adjust font size */
+}
+
+footer:hover {
+    background-color: #0d100e;
+}
+/* if it is a phone */
+
+
+/* if it is a huge monitor */
