@@ -186,6 +186,12 @@
 /* if it is a huge monitor */
 /* if it is a comp*/
 @media (min-width: 2500px) {
+    .m1{
+        background-color: #b8a081;
+    }
+    .m2{
+        background-color: #b8a081;
+    }
     footer {
         background-color: #0d100eB1; /* Dark background color */
         color: #b8a081; /* Light text color */
