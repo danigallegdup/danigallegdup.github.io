@@ -66,10 +66,10 @@
     height:5vh;
 }
 
-.icon{
+.iconff{
     padding-left: 1%;
 }
-.icon  a{
+.iconff  a{
     width:5vh;
     height:5vh;
     background-color: #b8a081;
@@ -80,7 +80,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.icon img{
+.iconff img{
     width:4vh;height:4vh;
   }
 /* */
@@ -164,10 +164,10 @@
         transform: scale(1.2); 
     }
 
-    .icon{
+    .iconf{
         padding-left: 1%;
     }
-    .icon  a{
+    .iconf  a{
         width:5vh;
         height:5vh;
         background-color: #b8a081;
@@ -178,7 +178,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .icon img{
+    .iconf img{
         width:4vh;height:4vh;
       }
 }
@@ -265,10 +265,10 @@
         transform: scale(1.2); 
     }
 
-    .icon{
+    .iconf{
         padding-left: 1%;
     }
-    .icon  a{
+    .iconf  a{
         width:5vh;
         height:5vh;
         background-color: #b8a081;
@@ -279,7 +279,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .icon img{
+    .iconf img{
         width:4vh;height:4vh;
       }
 }
