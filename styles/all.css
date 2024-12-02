@@ -8,11 +8,6 @@
     font-family:  'Times New Roman'; /* Change font */
 }
 
-.favicon img {
-  border-radius: 50%;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px; /* Adjust the size as needed */
-}
 
 html {scroll-behavior: smooth;
     overflow: auto; /* Hide scrollbars */

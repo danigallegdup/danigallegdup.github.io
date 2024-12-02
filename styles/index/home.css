@@ -66,10 +66,10 @@
     height:5vh;
 }
 
-.iconff{
+.iconf{
     padding-left: 1%;
 }
-.iconff  a{
+.iconf  a{
     width:5vh;
     height:5vh;
     background-color: #b8a081;
@@ -80,7 +80,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.iconff img{
+.iconf img{
     width:4vh;height:4vh;
   }
 /* */
