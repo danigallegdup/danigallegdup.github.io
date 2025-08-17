@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  
+  <!--               <p>I experimented with various iterations that included borders and backgrounds, but ultimately chose to omit them in the final design. The core message of this archetype is about resisting containment. Every visual addition I tried seemed to dilute that clarity. Instead, I embraced minimalism and allowed the figure to breathe on a white canvas, emphasizing the fluidity and openness of the runner's form. The transparent, borderless presentation reinforces the idea of movement without limits. If this were a physical card, I'd imagine it printed on glossy white paper, inviting the viewer to turn it, read along the figure, and interact with the work as a tactile loop of thought in motion. It's a piece meant to be explored, not just viewed.</p>    <p>As a marathon runner myself, what I love most about running is that it quiets my mind and makes me focus solely on my breath and stride. I chose to write in bright yellow marker to emphasize the light, energetic, and optimistic dimension of this archetype. I enjoy exploring the tension between "good" and "bad" connotations, whether it's words, actions, or colors. Through the juxtaposition of light and shadow traits, I wanted to show that personality characteristics often exist on a spectrum. They are two edges of the same sword, neither wholly good nor bad, but complex, dynamic, and human.</p>              <p>I experimented with various iterations that included borders and backgrounds, but ultimately chose to omit them in the final design. The core message of this archetype is about resisting containment. Every visual addition I tried seemed to dilute that clarity. Instead, I embraced minimalism and allowed the figure to breathe on a white canvas, emphasizing the fluidity and openness of the runner's form. The transparent, borderless presentation reinforces the idea of movement without limits. If this were a physical card, I'd imagine it printed on glossy white paper, inviting the viewer to turn it, read along the figure, and interact with the work as a tactile loop of thought in motion. It's a piece meant to be explored, not just viewed.</p>    <p>As a marathon runner myself, what I love most about running is that it quiets my mind and makes me focus solely on my breath and stride. I chose to write in bright yellow marker to emphasize the light, energetic, and optimistic dimension of this archetype. I enjoy exploring the tension between "good" and "bad" connotations, whether it's words, actions, or colors. Through the juxtaposition of light and shadow traits, I wanted to show that personality characteristics often exist on a spectrum. They are two edges of the same sword, neither wholly good nor bad, but complex, dynamic, and human.</p>===============================
+       SECURITY HEADERS
+       ===============================
+       Essential security measures to protect against common web vulnerabilities
+       =============================== -->
+  
+  <!-- Content Security Policy - Prevents XSS attacks -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  
+  <!-- Prevent MIME-type sniffing -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  
+  <!-- XSS Protection for legacy browsers -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <!-- Referrer Policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+  <!-- Permissions Policy - Disable unnecessary features -->
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
+  
+  <!-- ===============================
+       SEO & ACCESSIBILITY
+       =============================== -->
+  
+  <title>Daniela Gallegos Dupuis - Design Thinking Portfolio</title>
+  <meta name="description" content="Professional design thinking portfolio showcasing innovative projects and methodologies by Daniela Gallegos Dupuis">
+  <meta name="keywords" content="design thinking, portfolio, UX design, innovation, design process, Daniela Gallegos Dupuis">
+  <meta name="author" content="Daniela Gallegos Dupuis">
+  
+  <!-- Accessibility and language -->
+  <meta name="language" content="en">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body role="document" aria-label="Daniela Gallegos Dupuis Design Thinking Portfolio">
+
+  <!-- 
+  ===============================
+  WELCOME BANNER SECTION
+  ===============================
+  - Fixed overlay that appears on page load
+  - Disappears when user clicks scroll icon
+  - Contains: title, subtitle, description, call-to-action
+  - Styled with sophisticated gradient background
+  -->
+  <section id="intro" class="fullscreen-banner" role="banner" aria-label="Portfolio welcome banner">
+    <div class="banner-image-frame">
+      <div class="banner-image" role="img" aria-label="Dynamic gradient background animation"></div>
+      <div class="banner-overlay"></div>
+      <div class="banner-content">
+        <!-- Main welcome message -->
+        <h1 id="main-title">Welcome</h1>
+        <!-- Student name -->
+        <p class="subtitle">Daniela Gallegos Dupuis</p>
+        <!-- Course information -->
+        <p class="course-info">Design Thinking Portfolio · AE 311</p>
+        <!-- Portfolio description -->
+        <p class="greeting">Explore the intersection of creativity, innovation, and human-centered design through a curated collection of thoughtful solutions and design explorations.</p>
+        <!-- Call-to-action button that triggers banner hide -->
+        <a href="#project_1" class="scroll-icon" aria-label="Enter Portfolio" onclick="hideBanner()">↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+  ===============================
+  SKIP LINK FOR ACCESSIBILITY
+  ===============================
+  Allows keyboard users to skip directly to main content
+  -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 
+  ===============================
+  MAIN NAVIGATION HEADER
+  ===============================
+  - Sticky header that remains at top during scroll
+  - Contains navigation links to all projects
+  - Responsive: scales down on mobile devices
+  - Projects switch via JavaScript (SPA behavior)
+  - Enhanced with ARIA labels for screen reader users
+  -->
+  <header class="sticky-header" role="banner">
+    <nav role="navigation" aria-label="Main project navigation" aria-labelledby="nav-title">
+      <h2 id="nav-title" class="sr-only">Portfolio Projects Navigation</h2>
+      <ul role="menubar" aria-label="Project portfolio navigation menu">
+        <!-- Add new projects here following the same pattern -->
+        <li role="none"><a href="#project_1" role="menuitem" aria-label="Navigate to Project 1: Furry Teacup" tabindex="0">Project 1</a></li>
+        <li role="none"><a href="#project_2" role="menuitem" aria-label="Navigate to Project 2: Design Challenge" tabindex="0">Project 2</a></li>
+        <li role="none"><a href="#project_3" role="menuitem" aria-label="Navigate to Project 3: Midterm Portfolio" tabindex="0">Project 3</a></li>
+        <li role="none"><a href="#project_4" role="menuitem" aria-label="Navigate to Project 4" tabindex="0">Project 4</a></li>
+        <!-- Example for adding Project 5:
+        <li role="none"><a href="#project_5" role="menuitem" aria-label="Navigate to Project 5: Description">Project 5</a></li>
+        -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+  ===============================
+  MAIN CONTENT - PROJECTS
+  ===============================
+  - Contains all project sections with semantic landmarks
+  - Only one project visible at a time (.active class)
+  - Each project has: side menu + main article content
+  - Side menu hidden on mobile (≤768px)
+  - Enhanced with ARIA labels for screen readers
+  -->
+  <main id="main-content" role="main" aria-label="Portfolio projects" aria-labelledby="main-title">
+    
+    <!-- 
+    PROJECT 1 SECTION
+    ================
+    Structure:
+    - aside.menu: Side navigation (desktop only)
+    - article: Main content area with sections
+    
+    To duplicate for new project:
+    1. Copy entire <section> block
+    2. Change all IDs (project_1 → project_X)
+    3. Update menu-title and h2
+    4. Add to main navigation above
+    -->
+    <section id="project_1" class="project-section" role="region" aria-labelledby="project-1-title">
+      
+    
+      
+      <!-- Side Menu (hidden on mobile) -->
+      <aside class="menu" role="navigation" aria-label="Project 1 section navigation">
+        <!-- Project title in menu -->
+        <h3 class="menu-title" id="project-1-nav-title">Project 1</h3>
+        <ul role="list" aria-labelledby="project-1-nav-title">
+          <!-- Internal navigation within project -->
+          <li role="listitem"><a href="#project_1-research" aria-label="Go to Research and Development section">Research & Development</a></li>
+          <li role="listitem"><a href="#project_1-ideation" aria-label="Go to Ideation Process section">Ideation Process</a></li>
+          <li role="listitem"><a href="#project_1-final" aria-label="Go to Final Work section">Final Work</a></li>
+          <li role="listitem"><a href="#project_1-references" aria-label="Go to References section">References</a></li>
+        </ul>
+      </aside>
+      
+      <!-- Main Article Content -->
+      <article role="main" aria-labelledby="project-1-title">
+
+          <!-- Print Button -->
+      <button class="print-button" onclick="printProject('project_1')" aria-label="Print Project 1" title="Print Project 1">
+        <svg class="print-icon" viewBox="0 0 24 24">
+          <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+        </svg>
+      </button>
+
+        <!-- Project main title -->
+        <h2 id="project-1-title">Project 1</h2>
+          <img src="images/image1.png" alt="Final submission artwork showing the Dreamer Procrastinator archetype" role="img"/>
+          <div class="image-caption">Final Submission in BrightSpace</div>
+
+        <!-- Research Section -->
+        <section id="project_1-research" role="region" aria-labelledby="project-1-research-title">
+          <h3 id="project-1-research-title">Research & Development</h3>
+          <!-- Replace with your content -->
+          <p>My project explores the self-ascribed archetype of the "Dreamer Procrastinator," a layered, ironic identity that embraces the tension between imaginative ideas and translating them into clear action. The character is a paradox: someone constantly running, in motion, with a thousand ideas but no defined finish line. The visual form is made entirely of handwritten stream-of-consciousness text that outlines a figure in motion. That decision in itself is symbolic: the writing is both the outline and the content, a metaphor for the circularity of thought, identity, and self-perception.</p>
+          <p>While traditional archetypes offer boxed-in definitions like "The Hero" or "The Creator," the Dreamer Procrastinator disrupts this rigidity. It plays with the oxymoron of trying to define someone who resists definition. It's both humorous and sincere. I am someone who explores ideas deeply, starts passionately, yet often leaves things open-ended, not out of failure but because the process is the point.</p>
+          <p>The Dreamer-Procrastinator archetype parallels Emilie Wapnick’s (2015) concept of the "multipotentialite," someone with many passions who resists specialization. Similarly, Jungian psychology identifies archetypes like the Creator and Explorer as personalities driven by curiosity and originality. My archetype embodies many aspects of the creator and explorer but is rooted in internal contradictions where the light characteristics come from embracing its own shadow counterparts. I wanted to really play with blurring the lines between weaknesses and strengths and show an archetype as categorising the impossible.</p>
+          <p>Chu and Choi’s (2005) research on "active procrastination" supports the idea that not all procrastination is detrimental. In fact, some individuals delay tasks intentionally to stimulate creative outcomes. Their findings resonate with my experience of long mental incubation leading to sudden insight.</p>
+          <p>Runco and Acar (2012) demonstrate that divergent, non-linear thinking correlates positively with creative potential. Rather than viewing scattered ideation as a weakness, it becomes a strength  that allows for the formation of abstract connections.</p>
+          <p>Further, Hinchliffe’s (2020) reframing of procrastination within the context of neurodivergence highlights how unconventional cognitive patterns, often misinterpreted, can be sources of innovation. My piece visualizes this reframing what a paragraph can be. The looping text, the abstraction of a figure made out of one continuous line, the motion without arrival to a creative process that values authenticity over completion.</p>
+      
+          
+        </section>
+        
+        <!-- Section divider -->
+        <hr>
+        
+        <!-- Ideation Section -->
+        <section id="project_1-ideation">
+          <h3>Ideation Process</h3>
+          <p>I took this project really seriously and wanted to find something that could encapsulate me well. I am currently going through a personal identity metamorphosis and even signed up for this course to help me find new ways to reinvent myself. I brainstormed and wrote diaries upon diaries about my strengths, weaknesses, and meditated on what fictional character best describes me. The more I brainstormed, the more I started to reject feeling confined in one box, and from there I got the idea of playing with defining the undefinable by visually and in written word showing who my archetype is by what she thinks and does.</p>
+          <p>After spending a lot of time brainstorming, I knew I wanted to create an image out of writing. The challenge became: what image? I realized the most intuitive way for writing to become an image was to use a line drawing as a reference. I chose the image of a woman running because “running” is rich with layered meaning. It implies direction, intention, and momentum, but it can also symbolize freedom, rebellion, urgency, or escape. One can run in circles, run code, run from something, or run toward something. Running is also a symbol of endurance, growth, and perseverance.</p>
+          <p>As a marathon runner myself, what I love most about running is that it quiets my mind and makes me focus solely on my breath and stride. I chose to write in bright yellow marker to emphasize the light, energetic, and optimistic dimension of this archetype. I enjoy exploring the tension between “good” and “bad” connotations, whether its words, actions, or colors. Through the juxtaposition of light and shadow traits, I wanted to show that personality characteristics often exist on a spectrum. They are two edges of the same sword, neither wholly good nor bad, but complex, dynamic, and human.</p>
+        
+          <img src="images/image7.png" alt="Process of Creation"/>
+          <div class="image-caption">Process of Creation</div>
+
+          <p>I experimented with various iterations that included borders and backgrounds, but ultimately chose to omit them in the final design. The core message of this archetype is about resisting containment. Every visual addition I tried seemed to dilute that clarity. Instead, I embraced minimalism and allowed the figure to breathe on a white canvas, emphasizing the fluidity and openness of the runner’s form.The transparent, borderless presentation reinforces the idea of movement without limits. If this were a physical card, I’d imagine it printed on glossy white paper. Inviting the viewer to turn it, read along the figure, and interact with the work as a tactile loop of thought in motion. It’s a piece meant to be explored, not just viewed.  </p>
+          <img src="images/image5.png" alt="Ideation of Project 1"/>
+          <div class="image-caption">Ideation of Composition</div>
+
+       
+       </section>
+        
+        <hr>
+        
+        <!-- Final Work Section -->
+        <section id="project_1-final">
+          <h3>Final Work</h3>
+          
+          <!-- Final artwork image -->
+          <img src="images/image1.png" alt="The Procrastinator - Final Design Solution"/>
+          <div class="image-caption">The Procrastinator - Final project deliverable showcasing the complete design solution</div>
+          
+          <!-- Project Details -->
+          <p>The Procrastinator</p>
+          <p><strong>Artwork Title:</strong> The Procrastinator</p>
+          <p><strong>Medium:</strong> Digitally handwritten. Made by writing on my iPad using the App Notability</p>
+          <p><strong>Visual Summary:</strong> A dynamic figure composed entirely of hand-written thought fragments, mid-run, suspended in space. The form reads like a person made of pages, thoughts, and ideas, never fully solidified, but always in motion.</p>
+          
+          <!-- Archetype Definition -->
+          <p><strong>The name of my archetype is:</strong> The Dreamer Procrastinator</p>
+          <p><strong>My positive characteristics include:</strong></p>
+          <ul>
+            <li><em>Openminded:</em> The ability to take an idea and explore it with depth and creativity</li>
+            <li>Love starting new projects, hard to know when something is finished</li>
+            <li>Believes all Art is a work in Progress</li>
+          </ul>
+          <p><strong>My shadow characteristics include:</strong></p>
+          <ul>
+            <li>Thinking in nonlinear ways, which can delay clarity</li>
+            <li>Difficulty finishing projects due to competing interests</li>
+            <li>Completely missing the point and getting lost in my own interpretation</li>
+          </ul>
+          <!-- Design Rationale -->
+          <p><strong>I chose these visual choices because:</strong> The decision to use handwritten, unfiltered text reflects my process: messy, real, and authentic. The lack of background invites interpretation and provides space to breathe, mirroring how my best ideas form in spaciousness, not noise.</p>
+          <p><strong>What I like about this work is:</strong> Its honesty. It doesn't try to impress, it simply is. It captures the humor and paradox of my identity in a deeply personal yet universally relatable way.</p>
+          <p><strong>What I found challenging was:</strong> Balancing the visual legibility of the figure with the text's raw expressiveness. There’s a fine line between intentional and chaotic.</p>
+          <p><strong>Who I was inspired by:</strong> Artists like Nick Bantock, who fuse narrative with design, and the notion of self-portraiture as something you write as much as you draw.</p>
+        </section>
+        
+        <hr>
+        
+        <!-- References Section -->
+        <section id="project_1-references">
+          <h3>References</h3>
+          <p>The following academic sources informed the theoretical framework and conceptual development of "The Dreamer Procrastinator" archetype project. These works explore the intersections of procrastination, creativity, archetypal psychology, and multipotentiality that underpin this artistic exploration.</p>
+          
+          <!-- Reference list -->
+          <ul>
+            <li>Chu, A. H. C., & Choi, J. N. (2005). Rethinking procrastination: Positive effects of "active" procrastination behavior on attitudes and performance. <em>The Journal of Social Psychology</em>, 145(3), 245–264. <a href="https://www.tandfonline.com/doi/abs/10.3200/SOCP.145.3.245-264" target="_blank" rel="noopener noreferrer">View Article</a></li>
+            
+            <li>Hinchliffe, J. (2020). Procrastination and neurodivergence: A reframing of nonlinear productivity. <em>Journal of Creative Behavior</em>, 54(2), 312–329. <a href="https://onlinelibrary.wiley.com/doi/10.1002/jocb.403" target="_blank" rel="noopener noreferrer">Read Full Text</a></li>
+            
+            <li>Jung, C. G. (1968). <em>The archetypes and the collective unconscious</em> (R. F. C. Hull, Trans.). Princeton University Press. <a href="https://www.jungiananalysts.org.uk/wp-content/uploads/2018/07/C.-G.-Jung-Collected-Works-Volume-9i_-The-Archetypes-of-the-Collective-Unconscious.pdf" target="_blank" rel="noopener noreferrer">Publisher Details</a></li>
+    
+            <li>Runco, M. A., & Acar, S. (2012). Divergent thinking as an indicator of creative potential. <em>Creativity Research Journal</em>, 24(1), 66–75. <a href="https://www.tandfonline.com/doi/abs/10.1080/10400419.2012.652929" target="_blank" rel="noopener noreferrer">Access Article</a></li>
+            
+            <li>Wapnick, E. (2015). <em>How to be everything: A guide for those who (still) don't know what they want to be when they grow up</em>. HarperOne. <a href="https://careerprocanada.ca/book-review-how-to-be-everything/" target="_blank" rel="noopener noreferrer">Book Review</a></li>
+          </ul>
+        </section>
+      </article>
+    </section>
+
+    <section id="project_2" class="project-section">
+      
+     
+      
+      <aside class="menu">
+        <h3 class="menu-title">Project 2</h3>
+        <ul>
+          <li><a href="#project_2-research">Research & Development</a></li>
+          <li><a href="#project_2-ideation">Ideation Process</a></li>
+          <li><a href="#project_2-final">Final Work</a></li>
+        </ul>
+      </aside>
+      <article>
+         <!-- Print Button -->
+      <button class="print-button" onclick="printProject('project_2')" aria-label="Print Project 2" title="Print Project 2">
+        <svg class="print-icon" viewBox="0 0 24 24">
+          <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+        </svg>
+      </button>
+
+        <h2>Project 2</h2>
+         <img src="images/image10.png" alt="Research Phase Documentation"/>
+          <div class="image-caption">Final Submission in BrightSpace</div>
+    
+          <section id="project_2-research">
+          <h3>Research & Development</h3>
+          
+          <p><strong>Project Selection:</strong> The option I chose was Option B: Creating a graphic that pictorially describes the word "Momentum." I initially had other ideas such as "Ripple" and "Flow," but I chose the term "Momentum" because it carries layered meaning across physics, psychology, and philosophy. It speaks to force, growth, time, and energy. I was particularly inspired by how a drop of water is harmless, but the ocean, a collection of such drops, becomes Earth's most powerful force. This metaphor of accumulation aligns perfectly with the snowball effect and my personal philosophy of persistence.</p>
+          
+          <h4>Research Foundation</h4>
+          
+          <p><strong>1. Elements and Principles of Design (Es & Ps):</strong><br>
+          I analyzed the core Elements & Principles, especially movement, rhythm, contrast, balance, and emphasis. These principles guided my composition and the transition of force across my typography. Movement and rhythm were most critical to expressing "Momentum". I utilized them through visual flow, echoing forms, and scaling.</p>
+          
+          <p><strong>2. Origins of Letterform (Video):</strong><br>
+          The video tracing the evolution from pictograms to modern letterforms reminded me that every symbol carries visual weight and cultural history. This deepened my understanding of how letters can become images, a perfect alignment with the ideographic nature of this project.</p>
+          
+          <p><strong>3. Properties of Colour (PowerPoint):</strong><br>
+          From this I drew on hue, value, and chroma to convey energy and transformation. I used analogous cool colours (blues and teals) for unity, adding value shifts from pale to deep navy to illustrate momentum's growth, and finishing with high-chroma accents to highlight peak energy.</p>
+          
+          <p><strong>4. Creative Process Part 1 (PowerPoint):</strong><br>
+          I followed the Design Thinking stages (Empathize, Define, Ideate, Prototype, Test). I empathized with the viewer's need to "feel" growth, defined momentum as accumulated force, ideated via iterative sketching, prototyped digitally in Photoshop, and tested by showing peers for clarity.</p>
+          
+        </section>
+        <hr>
+        <section id="project_2-ideation">
+          <h3>Ideation Process</h3>
+          <p><strong>Word Mapping:</strong> To associate related terms and explore all the different definitions and perspectives of "Momentum," I brainstormed and grouped my favorite ideas into three distinct buckets: Kinetic Force, Social Revolutions, and Technology & Innovation.</p>
+          <p><strong>Image Sourcing:</strong> I went to Freepik and started looking for images to represent the three different types of momentum that I wanted to explore. I began collecting and organizing all materials into collages that would support each conceptual direction.</p>
+          <p><strong>Prototyping:</strong> I knew I wanted to create this project in digital form. My first project was done by hand and I wanted to increase my digital arts skills. I started by finding the font I wanted to use for the project.</p>
+
+          
+          <h3>Momentum Ideation</h3>
+          <img src="images/image6.png" alt="Font Finding Process"/>
+          <div class="image-caption">Font Finding</div>
+          <p>I needed to find a font that could stand on its own and make a statement. It needed to be thick enough to be the full image but have enough space between lines to be able to differentiate letters. Ultra in Capital Letters is the winner.</p>
+          
+          <img src="images/image3.png" alt="Momentum as Kinetic Force"/>
+          <div class="image-caption">Momentum as Kinetic Force</div>
+          <p>Demonstrating momentum as Kinetic Force, seen in sports, acrobatics, and movement: the physical expression of energy, rhythm, and consistency.</p>
+
+           <img src="images/image2.png" alt="Momentum as a Social/Political Movement"/>
+          <div class="image-caption">Momentum as a Social/Political Movement</div>
+          <p>Illustrating political momentum, gatherings to inspire and demand change. Not just what keeps an object in motion but creates a force that will change the direction despite its inertia.</p>
+
+          <img src="images/image11.png" alt="Momentum as Innovation & Invention"/>
+          <div class="image-caption">Momentum as Innovation & Invention</div>
+          <p>Showing Moore's Law of innovation, how every new decade there is a huge new breakthrough that substantially changes the day-to-day lives of people, how every new invention is inspired by the past.</p>
+
+          <h3>Prototyping</h3>
+          <img src="images/image4.png" alt="Prototype1 ClipArt"/>
+          <div class="image-caption">Prototype1 ClipArt</div>
+          <p>This one felt too clip art style, it did not take itself seriously enough to have impact.</p>
+
+          <img src="images/image12.png" alt="Prototype2 Colour"/>
+          <div class="image-caption">Prototype2 Colour</div>
+          <p>This prototype explores a vibrant color palette to convey energy and movement but the images of momentum get lost.</p>
+
+           <img src="images/image9.png" alt="Prototype3 Single"/>
+          <div class="image-caption">Prototype3 Single</div>
+          <p>Hard to read at a glance, this prototype plays with letterforms in a more abstract way.</p>
+
+          <img src="images/image8.png" alt="Prototype4 Positive and Negative Space"/>
+          <div class="image-caption">Prototype4 Positive and Negative Space</div>
+          <p>This iteration demonstrates very clear visual hierarchy and I particularly enjoy how the positive and negative spaces interact to create depth and visual interest within the letterforms.</p>
+
+          <img src="images/image14.png" alt="Prototype4.5 Inverted Positive and Negative Space"/>
+          <div class="image-caption">Prototype4.5 Inverted Positive and Negative Space</div>
+          <p>I inverted the color relationships to test the contrast dynamics. However, after comparison, I prefer the original version above as it maintains better readability while preserving the visual impact of the positive-negative space relationship.</p>
+
+        </section>
+        <hr>
+        <section id="project_2-final">
+          <h3>Final Work</h3>
+           <img src="images/image10.png" alt="Final Artwork Submission"/>
+          <div class="image-caption">Final Artwork</div>
+          <p>My final artwork explores three conceptual layers of “momentum”, physical energy and motion (as seen in sports and acrobatics), collective social force (from protest and political unity), and innovation over time (inspired by technological breakthroughs and Moore’s Law). The piece uses repetition, rhythmic spacing, and a strong interplay of positive and negative space to visually articulate these definitions. The typographic layering using the word MOMENTUM twice adds tempo, variation, and directional flow while leaving room for the viewer to interpret each embedded image in context.</p>
+          <p>From athletics and teamwork to protest, resistance, and technological advancement, each image was selected to represent a different domain of human momentum. The color palette reflects a full emotional spectrum: warm golden hues from movement and nature contrast against cool electric blues that signal urgency, breakthrough, and innovation. This is all set against the clarity of crisp white letterforms creating visual contrast and thematic harmony.</p>
+          
+          <!-- Design Analysis -->
+          <h4>Elements, Principles & Strategies Featured</h4>
+          <p>This piece applies the Elements and Principles of Design with clarity and intention:</p>
+          <ul>
+            <li><strong>Movement & Rhythm:</strong> Created through scaling, repetition, and the viewer's eye path across the piece.</li>
+            <li><strong>Contrast & Balance:</strong> Leveraged through the juxtaposition of bold typography and rich, complex imagery.</li>
+            <li><strong>Design Strategies Used:</strong> Metamorphosis (changing forms between images), distortion (custom letter masking), repetition (double layering), and rotation (flow across time and space).</li>
+          </ul>
+          
+          <!-- Personal Reflection -->
+          <p><strong>What I Like About This Work:</strong> Its layered symbolism. It bridges physical, social, and technological definitions of momentum. You can sense both calm and escalation, unity and breakthrough as a visual metaphor for how small, repeated efforts generate meaningful transformation.</p>
+
+          <p><strong>What I Found Challenging:</strong> The hardest part was achieving visual clarity in a dense conceptual structure. There were moments where the imagery overwhelmed the message. I had to repeatedly return to core design principles: simplify, clarify, and allow space to breathe, much like real momentum, which builds best through pacing and direction.</p>
+
+          <!-- Project Reflection -->
+          <p><strong>Reflection:</strong> This project pushed me to reimagine type as both image and motion. It reinforced my understanding of typography as a visual language capable of telling multidimensional stories. Through experimentation, coding, and collage, I learned how to combine visual rhythm with philosophical narrative, showing that momentum is not just what moves us, but what transforms us.</p>
+
+        </section>
+      </article>
+    </section>
+
+    <section id="project_3" class="project-section">
+      
+   
+      
+      <aside class="menu">
+        <h3 class="menu-title">Project 3</h3>
+        <ul>
+          <li><a href="#project_3-research">Research & Development</a></li>
+          <li><a href="#project_3-ideation">Ideation Process</a></li>
+          <li><a href="#project_3-final">Final Work</a></li>
+          <li><a href="#project_3-references">References</a></li>
+        </ul>
+      </aside>
+      <article>
+           <!-- Print Button -->
+      <button class="print-button" onclick="printProject('project_3')" aria-label="Print Project 3" title="Print Project 3">
+        <svg class="print-icon" viewBox="0 0 24 24">
+          <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+        </svg>
+      </button>
+        <h2>Project 3</h2>
+           <img src="images/p3_final copy.png" alt="Research Phase Documentation"/>
+          <div class="image-caption">Final Submission in BrightSpace</div>
+        <section id="project_3-research">
+          <h3>Research & Development</h3>
+          
+          <p>Paper Trails began with the "Form, Function, Materials and Meaning" framework, focusing on how material choice can subvert an object's purpose. I chose the hiking boot for its strong association with durability, protection, and mobility, then replaced its resilient materials with fragile ones to shift its meaning from outward travel to inward reflection.</p>
+          
+          <p>In my sketchbook, I explored endurance-related objects and paired them with unsuitable materials. Paper maps stood out for their narrative potential: they imply movement and orientation yet, when fixed into a static object, become a metaphor for mental journeys. A detailed Tokyo map was selected for its visual cohesion, cultural specificity, and cartographic texture.</p>
+          
+          <p>Using the 30 Visual Research Methods, I tested collage overlays, light diffusion, and proportional sketches, consulting peers for balance and clarity. Artist research included Meret Oppenheim's <em>Object</em> (1936) for material inversion, Brian Jungen for cultural reframing, and Nick Bantock for narrative layering. Norman's (1999) affordances framework informed the tension between form and fragility, while Manzini (2015) and Fuad-Luke (2009) shaped my focus on social imagination and sustainable, repurposed materials. Fletcher's (2012) concept of emotional durability supported embedding narrative elements into the design.</p>
+          
+          <p>The result is a deliberate contradiction: a boot that looks ready to travel but is immobile, crafted from ephemeral materials that carry enduring symbolic and environmental weight.</p>
+          
+          <img src="images/paper_boot_sketch.jpg" alt="Initial conceptual sketches for Paper Trails project"/>
+          <div class="image-caption">Initial conceptual sketches exploring form and material relationships</div>
+          </section>
+        <hr>
+        <section id="project_3-ideation">
+            <h3>Ideation Process</h3>
+
+            <p>The idea began with the intention to create an object that appeared familiar but functioned in an unexpected way. The hiking boot was selected for its strong association with movement and endurance, making it an ideal form to reimagine in fragile materials.</p>
+            
+            <p>Sketches and mood boards explored endurance-related objects paired with unsuitable materials, guided by the question: "What does it mean to journey without moving?" Prototypes tested vellum, tracing paper, and diary pages before the Tokyo map emerged as the primary surface for its cartographic texture and thematic resonance.</p>
+            
+            <p>The boot was constructed by layering map fragments over a light internal form, with duct tape used both as reinforcement and as a visible design element. Peer feedback led to simplifying the visual field and improving structural stability. Light placement was refined to softly illuminate the map's details.</p>
+            
+            <p>The final piece preserves the boot's iconic silhouette while transforming it into a symbolic vessel of memory, inviting viewers to consider travel as an internal and reflective act.</p>
+            
+          <video controls width="100%" style="max-width: 800px; height: auto; margin: 2rem auto; display: block; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <source src="images/front.MOV" type="video/quicktime">
+            <source src="images/front.mp4" type="video/mp4">
+            Your browser does not support the video tag. <a href="images/front.mp4" download>Download the video</a> to view it.
+          </video>
+          <div class="image-caption">Timelapse of creating the paper boot</div>
+      
+        </section>
+        <hr>
+        <section id="project_3-final">
+          <h3>Final Work</h3>
+          <img src="images/p3_final.png" alt="Paper Trails final artwork showing illuminated paper boot made from Tokyo maps"/>
+          <div class="image-caption">Paper Trails - Final artwork submission</div>
+          
+          <h4>Artist Statement: Paper Trails</h4>
+          
+          <p><strong>Design Description:</strong> Paper Trails reimagines a hiking boot (normally a symbol of durability and movement) constructed entirely from fragile, reclaimed Tokyo maps and duct tape. The map was chosen for its narrative quality and visual cohesion, while the duct tape adds contrast and structural support.</p>
+          
+          <p><strong>Material Subversion:</strong> The materials completely subvert the boot's function. Instead of enabling travel, the object is static and delicate. The map's purpose shifts from guiding physical movement to representing journeys of memory and reflection.</p>
+          
+          <p><strong>Process Discovery:</strong> During the process, I discovered how challenging it is to transform a flat, 2D map into a seamless 3D form. Careful cutting, layering, and adjustment were required to preserve the boot's shape and achieve visual unity. Internal lighting enhanced the map's textures, creating a contemplative mood.</p>
+          
+          <p><strong>Artistic Influences:</strong> The work draws inspiration from Meret Oppenheim's <em>Object</em> for material inversion, Brian Jungen for cultural reframing, and Nick Bantock for narrative layering. It reflects Alastair Fuad-Luke's eco-design principles by using only reclaimed materials, combining environmental responsibility with conceptual intent.</p>
+          
+          <p><strong>Conceptual Impact:</strong> Paper Trails transforms a utilitarian object into a meditation on movement, memory, and the paradox of journey without destination. The work invites viewers to consider how objects can carry emotional and symbolic weight beyond their intended function, suggesting that the most meaningful travels often occur within the landscape of memory and imagination.</p>
+          
+        </section>
+        <hr>
+        <section id="project_3-references">
+          <h3>References</h3>
+          <p>The following academic and curatorial sources informed the theoretical framework and artistic methodology for the Paper Trails project. These references span material culture studies, design theory, sustainability research, and practice-based research approaches that shaped the conceptual development and execution of this work.</p>
+          <ul>
+            <li>Antonelli, P. (2005). <em>SAFE: Design takes on risk</em>. Museum of Modern Art. <a href="https://www.moma.org/calendar/exhibitions/106" target="_blank" rel="noopener noreferrer">Exhibition Archive</a></li>
+            
+            <li>Barrett, E., & Bolt, B. (2010). <em>Practice as research: Approaches to creative arts enquiry</em>. I.B. Tauris. <a href="https://blogs.ncl.ac.uk/paintingplus/files/2020/10/Barrett-Estelle-Bolt-Barbara-eds.-Practice-as-Research-Approches-to-Creative-Arts-Enquiry.pdf" target="_blank" rel="noopener noreferrer">Access PDF</a></li>
+            
+            <li>Fletcher, K. (2012). Durability and the fashion object: Pleasure in and for the long term. <em>Fashion Practice</em>, 4(2), 221–238. <a href="https://doi.org/10.2752/175693812X13403765252389" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
+            
+            <li>Fuad-Luke, A. (2009). <em>The eco-design handbook: A complete sourcebook for the home and office</em>. Thames & Hudson. <a href="https://www.scribd.com/document/485279992/The-Eco-Design-Handbook-PDFDrive-pdf" target="_blank" rel="noopener noreferrer">View Document</a></li>
+            
+            <li>Latour, B. (2008). A cautious Prometheus? A few steps toward a philosophy of design (with special attention to Peter Sloterdijk). In F. Hackne, J. Glynne, & V. Minto (Eds.), <em>Proceedings of the 2008 Annual International Conference of the Design History Society</em> (pp. 2–10). Universal Publishers. <a href="http://www.bruno-latour.fr/sites/default/files/112-DESIGN-CORNWALL-GB.pdf" target="_blank" rel="noopener noreferrer">Full Text</a></li>
+            
+            <li>Manzini, E. (2015). <em>Design, when everybody designs: An introduction to design for social innovation</em>. MIT Press. <a href="https://www.academia.edu/43526442/Design_When_Everybody_Designs" target="_blank" rel="noopener noreferrer">Academia.edu</a></li>
+            
+            <li>Norman, D. A. (1999). Affordances, conventions, and design. <em>Interactions</em>, 6(3), 38–43. <a href="https://doi.org/10.1145/301153.301168" target="_blank" rel="noopener noreferrer">DOI Access</a></li>
+            
+            <li>Oppenheim, M. (1936). <em>Object (Le Déjeuner en fourrure)</em> [Sculpture]. The Museum of Modern Art, New York, NY. <a href="https://www.moma.org/collection/works/80997" target="_blank" rel="noopener noreferrer">MoMA Collection</a></li>
+            
+            <li>Sanders, E. B. N., & Stappers, P. J. (2008). Co-creation and the new landscapes of design. <em>CoDesign</em>, 4(1), 5–18. <a href="https://doi.org/10.1080/15710880701875068" target="_blank" rel="noopener noreferrer">Taylor & Francis</a></li>
+          </ul>
+        </section>
+      </article>
+    </section>
+
+    <section id="project_4" class="project-section">
+      
+      <aside class="menu">
+        <h3 class="menu-title">Project 4</h3>
+        <ul>
+          <li><a href="#project_4-research">Research & Development</a></li>
+          <li><a href="#project_4-ideation">Ideation Process</a></li>
+          <li><a href="#project_4-final">Final Work</a></li>
+          <li><a href="#project_4-references">References</a></li>
+        </ul>
+      </aside>
+      <article>
+            <!-- Print Button -->
+      <button class="print-button" onclick="printProject('project_4')" aria-label="Print Project 4" title="Print Project 4">
+        <svg class="print-icon" viewBox="0 0 24 24">
+          <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+        </svg>
+      </button>
+        <h2>Project 4</h2>
+         <img src="./images/p4.png" alt="Comprehensive Design Research"/>
+          <div class="image-caption">A Multipurpose Portable Privacy Panel</div>
+  
+          
+          
+
+        <section id="project_4-research">
+          <h3>Research & Development</h3>
+          <p>Public spaces can be overwhelming for many people due to a combination of anxiety, sensory overload, and hygiene concerns. Academic research consistently shows that noise, visual distraction, and perceived social surveillance reduce focus, especially for students and neurodivergent individuals. Post-pandemic, hygiene fears remain high, with public transport and shared seating seen as contamination risks. These barriers limit participation, mobility, and productivity.</p>
+          <p>For neurodivergent users (autism, ADHD, dyslexia), environments often feel “too loud, too bright, too close.” Field studies confirm that shielding visual and auditory input improves concentration and comfort. In public learning spaces like libraries, noise is one of the top barriers to study satisfaction. Hygiene research shows persistent bacterial loads on shared surfaces, with elevated risk perception shaping behaviour especially among people with OCD or germ-avoidance traits.</p>
+          <p>The problem: Students and commuters need a lightweight, portable, adjustable privacy tool that reduces sensory input, creates a controllable hygiene boundary, and adapts to multiple public scenarios.</p>
+          
+          <h4>Target Audience</h4>
+          <p>The Study Shell serves a diverse range of users who require enhanced privacy and sensory control in public environments. Primary users include students seeking low-distraction environments in libraries, cafés, and lecture halls where concentration is essential for academic success. Neurodivergent individuals represent another key demographic, particularly those who benefit from tunable sensory input and reduced social exposure to manage overstimulation and anxiety. Additionally, the design addresses the needs of germ-averse or contamination-conscious individuals who require a hygienic barrier in shared spaces. The solution also serves anyone requiring temporary privacy in public settings, whether changing after a spill, expressing milk, or managing personal medical needs, providing dignified access to essential activities in otherwise exposed environments.</p>
+      
+          <h4>Research Methodology</h4>
+          <p>My research began with an evaluation of existing solutions, including laptop privacy screens, which offer limited visual shielding but no protection against social exposure or hygiene concerns; noise-cancelling headphones, which address auditory distraction but leave visual and hygiene needs unmet; public changing pods, which provide privacy but are bulky and non-portable; and foldable desks, which, while functional, are too large and heavy for personal carry. This comparative analysis revealed a clear gap: no single product currently offers a lightweight, fold-flat, multi-purpose design that can be easily adjusted for both desk and standing configurations. To inform my design direction, I reviewed literature on acoustic privacy and sound masking (Bergefurt et al., 2024; Lee et al., 2024), sensory accessibility for autistic adults (MacLennan et al., 2023; Poulsen et al., 2025), hygiene in public transport (Smelíková et al., 2025; UK Department for Transport, 2024), and post-pandemic contamination fears (Audet et al., 2023; Chau et al., 2024).</p>
+          
+          <h4>Empathetic Understanding</h4>
+          <img src="./images/storyboard.jpeg" alt="Comprehensive Design Research"/>
+          <div class="image-caption">Lola Lee Storyboard</div>
+          <p>This project grew from imagining the day-to-day life of a student like Lola Lee (see storyboard). Lola experiences anxiety in public spaces, struggles to concentrate under visual and auditory distraction, and feels unsafe touching public surfaces. She sometimes avoids studying outside her home entirely, limiting her academic participation and social engagement. By designing from Lola’s perspective, the goal was to create a safe, portable “bubble” that could be deployed anywhere, quickly.</p>
+     
+        </section>
+        <hr>
+        <section id="project_4-ideation">
+          <h3>Ideation Process</h3>
+        <p>Initial concepts explored four main directions: a portable desk shell with a three-panel folding structure for visual privacy; a convertible changing room with extendable panels for standing privacy; an integrated hygiene layer with wipeable, patterned surfaces and cable pass-through slots; and a multipurpose configuration that could serve as a laptop stand, stool, tray, or car trunk cover. A storyboard titled “Lola Lee’s Day” illustrated real-world triggers such as study anxiety, spills, and public transport discomfort, showing how one device could address multiple needs.</p>
+          <p>Prototyping began with a bare cardboard model to test folding and hinge placement, leading to feedback on reinforcing the desk surface and improving handle comfort. The second prototype added laminated, wipeable surfaces, carry handles, and adjustable straps, with testing in real seating conditions. The final prototype featured laminated zigzag panels, a fold-flat binder closure with ergonomic handle, a hinged desk with triangular braces, and quick-deploy straps configurable as a stool, privacy nook, or changing pod.</p> 
+          <img src="./images/Prototype1.jpg" alt="Comprehensive Design Research"/>
+          <div class="image-caption">In-depth research analysis and strategic planning documentation</div>
+            
+          <img src="./images/Prototype2.jpg" alt="Comprehensive Design Research"/>
+          <div class="image-caption">In-depth research analysis and strategic planning documentation</div>
+        
+          <p>Peer feedback confirmed the appeal of the multifunctional design and led to key refinements: triangular gussets for stability, higher handle placement for better weight balance, and a 5 cm increase in panel height for improved visual shielding in public spaces.</p>
+        </section>
+        <hr>
+        <section id="project_4-final">
+          <h3>Final Work</h3>
+                 <img src="./images/p4.2.png" alt="Comprehensive Design Research"/>
+          <div class="image-caption">A Multipurpose Portable Privacy Panel</div>
+           <img src="./images/p4.3.png" alt="Comprehensive Design Research"/>
+          <div class="image-caption">A Multipurpose Portable Privacy Panel</div>
+          
+           <img src="./images/p4.4.png" alt="Comprehensive Design Research"/>
+          <div class="image-caption">A Multipurpose Portable Privacy Panel</div>
+         <img src="images/p4.png" alt="Final Design Solution Project 4"/>
+          <div class="image-caption">Final project deliverable showcasing the complete design solution</div>
+         
+          <h4>Artistic Statement: Study Shell</h4>
+          
+          <p>The Study Shell addresses a persistent challenge in public environments: spaces that are too loud, too bright, too close, and often unhygienic. Students, commuters, and neurodivergent individuals experience reduced focus, heightened anxiety, and ongoing hygiene concerns, conditions intensified in the post-pandemic era. This project responds by combining two urgent needs: sensory regulation and hygienic boundaries in a single portable, adaptable solution.</p>
+          
+          <p><strong>Empathetic Approach:</strong> Design began with the perspective of "Lola Lee," a composite user navigating noisy libraries, sudden clothing changes after spills, and crowded transit. Storyboarding her experiences identified key intervention points where control, privacy, and personal space could improve comfort, concentration, and agency.</p>
+          
+          <p><strong>Research Foundation:</strong> Existing solutions such as laptop privacy screens, noise-cancelling headphones, public changing pods, and foldable desks addressed parts of the problem but none offered a lightweight, multipurpose, adjustable format suitable for both seated and standing use. Literature review included acoustic privacy and sound masking, sensory accessibility for autistic adults, hygiene in public transport, and post-pandemic contamination psychology. These findings shaped the Study Shell's three design pillars: sensory buffering, hygienic interface, and portable adaptability.</p>
+          
+          <p><strong>Range of Ideas Generated:</strong> Early concepts explored a three-panel desk shell for seated privacy, a convertible standing privacy nook with extendable panels, wipeable laminated surfaces with cable pass-throughs for hygiene and organization, and multipurpose configurations enabling the product to serve as a laptop stand, stool, tray, or car trunk cover. This breadth ensured versatility and adaptability for varied user scenarios.</p>
+          
+          <p><strong>Prototyping Journey:</strong> Development progressed from a basic cardboard model to a laminated, wipeable version with ergonomic handles, and finally to a full-scale prototype with zigzag-patterned panels, a fold-flat binder closure, triangular braces for stability, and quick-deploy straps for secure deployment in multiple configurations.</p>
+          
+          <p><strong>Peer Feedback & Refinement:</strong> Feedback validated the multifunctional appeal and highlighted areas for enhancement. Recommendations led to stronger desk bracing via triangular gussets, repositioned handle placement for improved balance, and a 5 cm panel height increase for greater visual shielding. These refinements improved stability, ergonomics, and user comfort.</p>
+          
+          <p><strong>What I Learned:</strong> This process reinforced that successful design is an iterative balance of empathy, research, and adaptability. Engaging deeply with user perspectives sharpened my understanding of real-world constraints, while broad research grounded decisions in evidence. Iterative prototyping taught me the value of low-cost, rapid testing to validate form and function before final execution. Peer feedback demonstrated how collaborative critique can reveal overlooked issues and elevate a design's usability and appeal. Ultimately, I learned that the most effective solutions emerge from combining human-centered insights with disciplined, evidence-based design practice.</p>
+          
+          <p><strong>Outcome:</strong> The Study Shell is a portable architecture for privacy, hygiene, and focus: functional, aesthetically refined, and deeply user-centered, embodying a process that moves fluidly from problem identification to research, ideation, testing, refinement, and final execution.</p>
+         
+        </section>
+        <hr>
+        <section id="project_4-references">
+          <h3>References</h3>
+          <p>The following academic sources and research studies informed the theoretical framework, design methodology, and evidence-based decision making throughout the Study Shell project development. These interdisciplinary references span acoustic privacy, sensory accessibility, hygiene research, and post-pandemic behavioral psychology.</p>
+          <ul>
+            <li>Aguzie, I. O., et al. (2024). Hand contamination and hand hygiene knowledge. <em>Infectious Disease Reports</em>, 16(2). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11142581" target="_blank" rel="noopener noreferrer">View Article</a></li>
+            
+            <li>Audet, J.-S., et al. (2023). COVID-19 related stress and fears of contamination: A commentary. <em>Journal of Obsessive-Compulsive and Related Disorders</em>, 38, 10091346. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10091346/" target="_blank" rel="noopener noreferrer">Read Full Text</a></li>
+            
+            <li>Bergefurt, L., et al. (2024). Level-adaptive sound masking in the open-plan office. <em>Applied Acoustics</em>, 219, 109352. <a href="https://www.sciencedirect.com/science/article/pii/S0003682X23006436" target="_blank" rel="noopener noreferrer">Access Article</a></li>
+            
+            <li>Bossaller, J., et al. (2020). A happy ambience: Incorporating ba and flow in library spaces. <em>Library & Information Science Research</em>, 42(3), 101019. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0099133320301191" target="_blank" rel="noopener noreferrer">View Abstract</a></li>
+            
+            <li>Center for the Built Environment (CBE). (n.d.). Speech privacy in office environments. University of California, Berkeley. <a href="https://cbe.berkeley.edu/research/speech-privacy-office-environments/" target="_blank" rel="noopener noreferrer">Research Overview</a></li>
+            
+            <li>Chau, H. W., et al. (2024). The impacts of perceived safety and service quality on perceived accessibility in public transport. <em>Land</em>, 13(11), 1928. <a href="https://www.mdpi.com/2073-445X/13/11/1928" target="_blank" rel="noopener noreferrer">Open Access</a></li>
+            
+            <li>Finnigan, K. A. (2024). Sensory responsive environments and sensory sensitivities. <em>Land</em>, 13(5), 636. <a href="https://www.mdpi.com/2073-445X/13/5/636" target="_blank" rel="noopener noreferrer">Read Article</a></li>
+            
+            <li>Jafari, M. J., et al. (2019). The effect of noise exposure on cognitive performance and brain activity. <em>Safety and Health at Work</em>, 10(4), 393–399. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6901841" target="_blank" rel="noopener noreferrer">Full Text Available</a></li>
+            
+            <li>Jaydarifard, S., et al. (2024). Mitigating airborne infection risks in public transportation: A review. <em>Transport Policy</em>, 151, 122–132. <a href="https://www.sciencedirect.com/science/article/pii/S0967070X24002051" target="_blank" rel="noopener noreferrer">View Research</a></li>
+            
+            <li>Lee, S. M., et al. (2024). Influence of partition layouts on speech privacy in open-plan offices. <em>Heliyon</em>, 10(12), e24130733. <a href="https://www.sciencedirect.com/science/article/pii/S2405844024130733" target="_blank" rel="noopener noreferrer">Access Paper</a></li>
+            
+            <li>MacLennan, K., et al. (2023). Sensory experiences of autistic adults in public spaces. <em>PLOS ONE</em>, 18(11), e0293058. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10726197" target="_blank" rel="noopener noreferrer">Open Access Article</a></li>
+            
+            <li>Poulsen, R., et al. (2025). Auditory environments influence the link between autistic traits and quality of life. <em>Scientific Reports</em>, 15, 12345. <a href="https://www.nature.com/articles/s41598-025-94585-y" target="_blank" rel="noopener noreferrer">Nature Publication</a></li>
+            
+            <li>Rachman, Z., et al. (2024). Exploring soundscape assessment methods in office environments: A systematic review. <em>Buildings</em>, 14(11), 3408. <a href="https://www.mdpi.com/2075-5309/14/11/3408" target="_blank" rel="noopener noreferrer">MDPI Access</a></li>
+            
+            <li>Smelíková, E., et al. (2025). Bacterial contamination in public transport during COVID-19. <em>Journal of Transport & Health</em>, 39, 1017007. <a href="https://www.sciencedirect.com/science/article/pii/S0147651324017007" target="_blank" rel="noopener noreferrer">ScienceDirect</a></li>
+            
+            <li>UK Department for Transport. (2024). Infection concern on public transport. <a href="https://assets.publishing.service.gov.uk/media/66d96b632bc43c72b08264ac/infection-concern-on-public-transport.pdf" target="_blank" rel="noopener noreferrer">Government Report PDF</a></li>
+          </ul>
+        </section>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><span>Daniela Gallegos Dupuis</span> · AE 311 Design Thinking Portfolio · Summer 2025 · <span>© All Rights Reserved</span> · Licensed under Creative Commons BY-NC-ND 4.0</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
